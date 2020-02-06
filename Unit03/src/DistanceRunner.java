@@ -28,8 +28,8 @@ public class DistanceRunner
 		out.print("Enter Y2 :: ");
 		int y2 = keyboard.nextInt();
 
-		MilesPerHour test = new MilesPerHour(x1, y1, x2, y2);
-		test.calcMPH();
+		Distance test = new Distance(x1, y1, x2, y2);
+		test.calcDistance();
 		test.print();	
 			
 	}
