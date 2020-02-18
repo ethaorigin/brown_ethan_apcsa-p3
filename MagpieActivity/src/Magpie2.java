@@ -35,10 +35,6 @@ public class Magpie2
 		{
 			response = "Tell me more please.";
 		}
-		else if (statement.indexOf("no") >= 0)
-		{
-			response = "Why so negative?";
-		}
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
@@ -55,12 +51,25 @@ public class Magpie2
 		{
 			response = "He sounds like a good teacher.";
 		}
+		else if (statement.indexOf("waffles") >= 0)
+		{
+			response = "Those are delicious, I sure love human food.";
+		}
+		else if (statement.indexOf("battery") >= 0)
+		{
+			response = "That reminds me, I must go recharge, er... I mean eat human food.";
+		}
+		else if (statement.indexOf("no") >= 0)
+		{
+			response = "Why so negative?";
+		}
 		else
 		{
 			response = getRandomResponse();
 		}
 		return response;
 	}
+	//It chooses which response to use first if there are multiple keywords by selecting the first keyword response that appears in the program
 
 	/**
 	 * Pick a default response to use if nothing else fits.
