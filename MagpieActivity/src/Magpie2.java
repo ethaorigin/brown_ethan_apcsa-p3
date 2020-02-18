@@ -59,6 +59,10 @@ public class Magpie2
 		{
 			response = "That reminds me, I must go recharge, er... I mean eat human food.";
 		}
+		else if (statement.indexOf("smart") >= 0)
+		{
+			response = "That reminds me, I am quite intelligent and humble.";
+		}
 		else if (statement.indexOf("no") >= 0)
 		{
 			response = "Why so negative?";

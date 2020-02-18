@@ -14,6 +14,13 @@ public class StringExplorer
 		//  Demonstrate the indexOf method.
 		int position = sample.indexOf("quick");
 		System.out.println ("sample.indexOf(\"quick\") = " + position);
+		int pos = sample.indexOf("slow");
+		
+		if(pos != -1)
+		   System.out.println("slow is found at position " + pos);
+		else
+		   System.out.println("slow is not found");
+
 		
 		//  Demonstrate the toLowerCase method.
 		String lowerCase = sample.toLowerCase();
@@ -21,7 +28,14 @@ public class StringExplorer
 		System.out.println ("After toLowerCase(), sample = " + sample);
 		
 		//  Try other methods here:
-
+		sample = "Computer Science is the best, the greatest, and the most wonderful subject to study!";
+		
+		for(int n = 0; n<sample.length()-3; n++) {
+			if(sample.substring(n, n + 3).toLowerCase().equals("the")) {
+				System.out.println("\"the\" is found at position " + n);
+			}
+		}
+		
 	}
 
 }
