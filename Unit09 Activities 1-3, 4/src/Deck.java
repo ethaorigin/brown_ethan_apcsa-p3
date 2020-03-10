@@ -79,6 +79,16 @@ public class Deck {
 			return cards[size];
 		}
 	}
+	public void selectionShuffle() {
+		for(int n = cards.length-1; n>=0; n--) {
+			int k = (int)(Math.random()*cards.length);
+			Card one = cards[k];
+			Card two = cards[n];
+			cards[n] = one;
+			cards[k] = two;
+		}
+		size = cards.length;
+	}
 
 	/**
 	 * Generates and returns a string representation of this deck.

@@ -22,5 +22,14 @@ public class DeckTester {
 		System.out.println(deck1.isEmpty());
 		System.out.println(deck1.deal());
 		System.out.println(deck1.size());
+		deck1.selectionShuffle();
+		System.out.println(deck1.size());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.size());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.size());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.size());
+		System.out.println(deck1.isEmpty());
 	}
 }
