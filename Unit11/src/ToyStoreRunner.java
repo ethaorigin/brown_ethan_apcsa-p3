@@ -11,6 +11,8 @@ public class ToyStoreRunner
 {
 	public static void main( String args[] )
 	{
-
+		ToyStore test = new ToyStore();
+		test.loadToys("sorry bat sorry sorry sorry train train teddy teddy ball ball");
+		System.out.println(test.getThatToy("sorry") + " " + test.getThatToy("bat") + " " + test.getThatToy("train") + " " + test.getThatToy("teddy")+" " + test.getThatToy("ball"));
 	}
 }

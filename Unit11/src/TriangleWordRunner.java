@@ -9,6 +9,6 @@ public class TriangleWordRunner
 {
 	public static void main( String args[] )
 	{
-		
+		TriangleWord.printTriangle("hey");
 	}
 }

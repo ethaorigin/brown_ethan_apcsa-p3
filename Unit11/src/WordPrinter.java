@@ -10,5 +10,8 @@ public class WordPrinter
 		
 	public static void printWord(String word, int times)
 	{
+		for (int n = times; n>0; n--) {
+			System.out.println(word);
+		}
 	}
 }
