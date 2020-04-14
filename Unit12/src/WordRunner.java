@@ -12,7 +12,7 @@ public class WordRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Scanner file = new Scanner(new File("C:\\Users\\EthaO\\OneDrive\\Desktop\\brown_ethan_apcsa-p3\\Unit12\\src\\words.dat"));
+		Scanner file = new Scanner(new File("C:\\Users\\EthaO\\OneDrive\\Documents\\School\\brown_ethan_apcsa-p3\\Unit12\\src\\words.dat"));
 
 		int size = file.nextInt();
 		Word[] words = new Word[size];
@@ -28,16 +28,5 @@ public class WordRunner
 			System.out.println(words[n]);
 		}
 		
-
-
-
-
-
-
-
-
-
-
-
 	}
 }
